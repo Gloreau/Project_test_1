@@ -3,6 +3,11 @@
 @import "components/productCard.scss";
 
 
+.navbar-brand {
+    font-family: 'Quattrocento';
+    font-weight: bold;
+    color:$primary;
+}
 
 h1 {
     color:$primary;
@@ -13,6 +18,8 @@ h1 {
     display: inline-block;
     margin: 0.8em auto;
     position: relative;
+    white-space: nowrap;
+    text-transform: uppercase;
 
     &:before {
         content:"";
@@ -44,11 +51,25 @@ h1 {
 
 }
 
- 
+@media (max-width: 768px) { h1 {
+    font-size:2em;
+} } 
+
+
 // BGS
 
 body {
     background:$bglight;
+}
+
+.sectionbg1 {
+background:url('/imgs/section-bg1.png') repeat-x center;
+}
+
+.sectionbg2 {
+    background:$primary;
+    padding: 3em 0;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
 }
 
 header {
@@ -68,6 +89,17 @@ nav a {
 }
 
 // CONTENT
+
+.ctrow {
+    margin-bottom: 10vh;
+}
+
+@media (min-width: 1320px) {
+    .container{
+        max-width: 1320px;
+    }
+}
+
 main {
     padding:2em 0;
 }

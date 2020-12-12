@@ -6,13 +6,55 @@
 {% block body %}
 	
 	<main role="main">
+    <div class="ctrow">
         <div class="container d-flex">
             <h1><span>PIZZAS</span></h1>
         </div>
-        <div class="row container">
-            <div class="col col-2">
+        <section class="sectionbg1">
+        <div class="container">
+        <div class="row" >
+            <div class="col">
             {{ include('components/productCard.html.twig') }}
             </div>
+             <div class="col">
+            {{ include('components/productCard.html.twig') }}
+            </div>
+             <div class="col">
+            {{ include('components/productCard.html.twig') }}
+            </div>
+            <div class="col">
+            {{ include('components/productCard.html.twig') }}
+            </div>
+            
+        </div>
+        </div>
+        </section>
+        </div>
+
+        <!-- SOUS MARINS --> 
+          <div class="ctrow">
+<div class="container d-flex">
+            <h1><span>sous-marins</span></h1>
+        </div>
+        <section class="sectionbg2">
+        <div class="container">
+        <div class="row" >
+            <div class="col">
+            {{ include('components/productCard.html.twig') }}
+            </div>
+             <div class="col">
+            {{ include('components/productCard.html.twig') }}
+            </div>
+             <div class="col">
+            {{ include('components/productCard.html.twig') }}
+            </div>
+            <div class="col">
+            {{ include('components/productCard.html.twig') }}
+            </div>
+            
+        </div>
+        </div>
+        </section>
         </div>
 	</main>
 
