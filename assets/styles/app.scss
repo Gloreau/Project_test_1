@@ -1,7 +1,74 @@
-$primary:red;
-
 @import "~bootstrap/scss/bootstrap";
+@import "variables.scss";
+@import "components/productCard.scss";
+
+
+
+h1 {
+    color:$primary;
+    font-family: $headfont;
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    margin:auto;
+    position: relative;
+
+    &:before {
+        content:"";
+        width:13px;
+        height:13px;
+        display: block;
+        background:$accent1;
+        position:absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left:-35px;
+        border-radius: 50%;
+    }
+    &:after{
+        content:"";
+        width:13px;
+        height:13px;
+        display: block;
+        background:$accent1;
+        position:absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right:-35px;
+        border-radius: 50%;
+    } 
+    span {
+        margin-right:-0.1em;
+    }
+
+}
+
+ 
+// BGS
 
 body {
-    background-color: rgb(23, 35, 102);
-}  
+    background:$bglight;
+}
+
+header {
+    background:$bglight;
+}
+
+// HEADER
+nav {
+border-bottom:1px solid $primary;
+ }
+nav a {
+    color:$secondary;
+
+    &:hover {
+        color:darken($secondary,20%);
+    }
+}
+
+// CONTENT
+main {
+    padding:2em 0;
+}
+ 
