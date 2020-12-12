@@ -1,0 +1,63 @@
+
+.productCard {
+    display:flex;
+    flex-direction: column;
+    padding:2rem 2rem 0 2rem;
+    background:$accent1;
+    position: relative;
+    width:300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0, 0, 0, 0.103);
+    margin:1em auto;
+
+    .productCard__name {
+        color:$primary;
+        font-weight: bold;
+        font-size:2em;
+        text-align: center;
+        font-family: $headfont;
+    }
+
+    .productCard__img {
+        width: 168px;
+        margin: 0.5em auto;
+    }
+
+    .productCard__ingredients {
+        color:$primary;
+        text-align: center;
+        line-height: 1.3em;
+        margin: 0.5em 0 1.1em;
+    }
+
+    .productCard__price {
+       position:relative;
+       color:#ff5a5a;
+       font-family: $headfont;
+       text-align:center;
+       font-size:1.8em;
+       font-weight: bold;
+       margin-top:10px;
+
+       span {
+        z-index:10;
+        position: relative;
+        display: block;
+       }
+    
+       &:before {
+           position:absolute;
+        content:'';
+        $size: 55px;
+        height: $size;
+        width: $size * 2;
+        border-top-left-radius: $size * 2;
+        border-top-right-radius: $size * 2;
+        background: $primary;
+        bottom:0;
+        display:block;
+        left:50%;
+        transform:translateX(-50%);
+       
+       }
+    }
+}
