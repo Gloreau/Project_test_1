@@ -5,6 +5,8 @@
     padding:2rem 2rem 0 2rem;
     background:$accent1;
     position: relative;
+    width:300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0, 0, 0, 0.103);
 
     .productCard__name {
         color:$primary;
@@ -13,14 +15,22 @@
         text-align: center;
         font-family: $headfont;
     }
+
+    .productCard__img {
+        width: 168px;
+        margin: 0.5em auto;
+    }
+
     .productCard__ingredients {
         color:$primary;
         text-align: center;
         line-height: 1.3em;
+        margin: 0.5em 0 1.1em;
     }
+
     .productCard__price {
        position:relative;
-       color:$secondary;
+       color:#ff5a5a;
        font-family: $headfont;
        text-align:center;
        font-size:1.8em;
@@ -29,7 +39,6 @@
 
        span {
         z-index:10;
-    
         position: relative;
         display: block;
        }
