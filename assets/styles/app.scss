@@ -79,15 +79,37 @@ header {
 // HEADER
 nav {
 border-bottom:1px solid $primary;
- }
-nav a {
-    color:$secondary;
-
-    &:hover {
-        color:darken($secondary,20%);
+    
+    a {
+        color:$secondary;
+        
+        &:hover {
+            color:darken($secondary,20%);
+            text-decoration: none;
+        }
     }
+    .infos div {
+        margin:0 0.5em;
+    }
+    .language-img {
+        width: 30px;
+        border: 1px solid $secondary;
+        display:block;
+    
+        img {
+            max-width:100%;
+            width:100%;
+            display:block;
+        }
+    }
+    i.fas {
+        font-size: 24px;
+        margin: 0 0.3em;
+    }
+
 }
 
+  
 // CONTENT
 
 .ctrow {
