@@ -3,11 +3,88 @@
 @import "components/productCard.scss";
 
 
+img {
+    max-width: 100%;
+}
+
 .navbar-brand {
     font-family: 'Quattrocento';
     font-weight: bold;
     color:$primary;
 }
+
+
+// BGS
+
+body {
+    background:$bglight;
+    overflow-x:hidden;
+}
+
+.sectionbg1 {
+background:url('/imgs/section-bg1.png') repeat-x center;
+}
+
+.sectionbg2 {
+    background:$primary;
+    padding: 3em 0;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+}
+
+header {
+    background:$bglight;
+}
+
+// HEADER
+nav {
+border-bottom:1px solid $primary;
+    
+    a {
+        color:$secondary;
+        
+        &:hover {
+            color:darken($secondary,20%);
+            text-decoration: none;
+        }
+    }
+    .infos div {
+        margin:0 0.5em;
+    }
+    .language-img {
+        width: 30px;
+        border: 1px solid $secondary;
+        display:block;
+    
+        img {
+            max-width:100%;
+            width:100%;
+            display:block;
+        }
+    }
+    i.fas {
+        font-size: 24px;
+        margin: 0 0.3em;
+    }
+
+}
+
+  
+// CONTENT
+
+.ctrow {
+    margin-bottom: 10vh;
+}
+
+@media (min-width: 1320px) {
+    .container{
+        max-width: 1320px;
+    }
+}
+
+main {
+    padding:2em 0;
+}
+ 
 
 h1 {
     color:$primary;
@@ -20,6 +97,7 @@ h1 {
     position: relative;
     white-space: nowrap;
     text-transform: uppercase;
+    
 
     &:before {
         content:"";
@@ -55,52 +133,17 @@ h1 {
     font-size:2em;
 } } 
 
-
-// BGS
-
-body {
+.hideh1 {
+    position: absolute;
     background:$bglight;
-}
-
-.sectionbg1 {
-background:url('/imgs/section-bg1.png') repeat-x center;
-}
-
-.sectionbg2 {
-    background:$primary;
-    padding: 3em 0;
-    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
-}
-
-header {
-    background:$bglight;
-}
-
-// HEADER
-nav {
-border-bottom:1px solid $primary;
- }
-nav a {
-    color:$secondary;
-
-    &:hover {
-        color:darken($secondary,20%);
-    }
-}
-
-// CONTENT
-
-.ctrow {
-    margin-bottom: 10vh;
-}
-
-@media (min-width: 1320px) {
-    .container{
-        max-width: 1320px;
-    }
-}
-
-main {
-    padding:2em 0;
+    width: 128%;
+    top: 0;
+    height: 100%;
+    left: -37px;
+    display: block;
+    z-index: 20;
 }
  
+
+
+// About

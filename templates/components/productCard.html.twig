@@ -1,9 +1,8 @@
-<article class="productCard d-flex flex-column justify-content-between">
-    <h3 class="productCard__name">Hawaienne</h3>
+{# <article class="productCard d-flex flex-column justify-content-between item{{product.id}}">
+    <h3 class="productCard__name">{{ product.name }}</h3>
     <img class="productCard__img" src="{{ asset('imgs/pizza.png') }}" alt=""/>
-    <p class="productCard__ingredients">Sauce tomate à l'origan, mozzarella, filet de poulet rôti et mariné, tomates fraîches, parmigiano reggiano AOP
-    </p>
-    <div class="productCard__price"><span>18$</span></div>
+    <p class="productCard__ingredients">{{ product.ingredients }}</p>
+    <div class="productCard__price"><span>{{ product.price }}</span></div>
     <div class="productCard__diet">
         <div class="productCard__diet--vege"></div>
         <div class="productCard__diet--vegan"></div>
@@ -11,3 +10,4 @@
     </div>
 
 </article>
+ #}
