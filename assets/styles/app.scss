@@ -19,6 +19,7 @@ img {
 body {
     background:$bglight;
     overflow-x:hidden;
+    font-family: $bodyfont;
 }
 
 .sectionbg1 {
@@ -144,6 +145,75 @@ h1 {
     z-index: 20;
 }
  
+// Home
+
+.hero {
+    margin-top:-2em;
+    position:relative;
+    height:50vh;
+    width:100%;
+    background:url('/imgs/hero.jpg') center top ;
+    display:flex;
+    align-items: center;
+    color:white;
+    text-align: left;
+    .container {
+        z-index: 2;
+    }
+    .hero__ctn {
+        max-width: 400px;
+        z-index:2;
+        
+    }
+    .hero__title__name {
+        font-size: 4.1em;
+        font-family: "Quattrocento", serif;
+        line-height: 1em;
+        font-weight: bold;
+        letter-spacing: 0.15rem;
+    }
+    .hero__title__accroche {
+        position: relative;
+        font-size: 2em;
+        letter-spacing: 0.05rem;
+        color:$accent1;
+        margin-bottom:1.5em;
+
+        &:after{
+            content:"";
+            width:13px;
+            height:13px;
+            display: block;
+            background:$accent1;
+            position:absolute;
+            bottom:-55%;
+            transform: translateX(-50%);
+            left:50%;
+            border-radius: 50%;
+        } 
+    }
+    ul {
+        list-style: none;
+        padding:0;
+        margin:0;
+        .hero__horaires__day {
+            font-weight: bold;
+        
+        }
+    }
+    &:after {
+        content:'';
+        background: rgb(79,14,72);
+        background: linear-gradient(90deg, rgba(79,14,72,1) 36%, rgba(0,0,0,0) 100%);
+        width:100%;
+        position:absolute;
+        height:100%;
+        top:0;
+        left:0;
+        z-index:1;
+        display:block;
+    }
+}
 
 
 // About

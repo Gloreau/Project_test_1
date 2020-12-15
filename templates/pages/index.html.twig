@@ -1,106 +1,50 @@
 {% extends 'layouts/base.html.twig' %}
 
-{% block title %}Hello IndexController!
+{% block title %}Hull Pizza
 {% endblock %}
 
 {% block body %}
 
 	<main role="main">
-		<div class="ctrow">
-			<div class="container d-flex">
-				<h1>
-					<div class="hideh1"></div>
-					<span>PIZZAS</span>
-				</h1>
-			</div>
-			<section class="sectionbg1">
-				<div class="container">
-					<div
-						class="row">
-
-
-						{#     {% if product is defined %}  
-						         {% for product in products %}
-						            <div class="col">
-						            {{ include('components/productCard.html.twig') }}
-						            </div>
-						         {% if loop.index % 4 == 0 %}
-						           </div><div class="row" >
-						           {% endif %} 
-						           {% endfor %}
-						           {% else %}
-						    No product found :(.
-						{% endif %}#}
-
-
-						<div class="col">
-							{{ include('components/productCard.html.twig') }}
-						</div>
-						<div class="col">
-							{{ include('components/productCard.html.twig') }}
-						</div>
-						<div class="col">
-							{{ include('components/productCard.html.twig') }}
-						</div>
-						<div class="col">
-							{{ include('components/productCard.html.twig') }}
-						</div>
-
-					</div>
-				</div>
-			</section>
+    <section class="hero">
+        <div class="container">
+            <div class="col-md-8 pl-0">
+                <div class="hero__ctn mx-auto ml-md-0">
+                    <div class="hero__title d-flex flex-column align-items-center align-items-md-start">
+                        <span class="hero__title__name">HULL PIZZA</span>
+                        <p class="hero__title__accroche">Livraison gratuite et rapide</p>
+                    </div>
+                    <div class="hero__horaires d-flex flex-md-row flex-column align-items-md-start justify-content-center justify-content-md-between" >
+                    <ul class="hero__horaires__ctn text-md-left text-center">
+                    <li><span class="hero__horaires__day">Lundi, mardi :</span> 4pm - 10pm</li>
+                    <li><span class="hero__horaires__day">Mercredi :</span> 11am - 11:30pm</li>
+                    <li><span class="hero__horaires__day">Jeudi :</span> 11am - 12:30am</li>
+                    </ul>
+                    <ul class="hero__horaires__ctn text-md-left text-center">
+                    <li><span class="hero__horaires__day">Vendredi :</span> 11am - 12:30am</li>
+                    <li><span class="hero__horaires__day">Samedi :</span> 3pm - 12am</li>
+                    <li><span class="hero__horaires__day">Dimanche :</span> 4pm - 9pm</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section>
+    	<div class="container d-flex">
+			<h1>
+				<div class="hideh1"></div>
+				<span>Spéciaux</span>
+			</h1>
 		</div>
-
-		<!-- SOUS MARINS -->
-		<div class="ctrow">
-			<div class="container d-flex">
-				<h1>
-					<div class="hideh1"></div>
-					<span>sous-marins</span>
-				</h1>
-			</div>
-			<section class="sectionbg2">
+		<section class="sectionbg2">
 				<div class="container">
 					<div class="row">
-						<div class="col">
-							{{ include('components/productCard.html.twig') }}
-						</div>
-						<div class="col">
-							{{ include('components/productCard.html.twig') }}
-						</div>
-						<div class="col">
-							{{ include('components/productCard.html.twig') }}
-						</div>
-						<div class="col">
-							{{ include('components/productCard.html.twig') }}
-						</div>
-
-					</div>
-				</div>
-			</section>
-		</div>
-		<section>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 offset-md-2 ">
-						<div class="portrait">
-							<img src="https://images.squarespace-cdn.com/content/v1/55c4ce5ee4b026fd99444e90/1454598109899-FE6VJNMG898SQYF2GY0I/ke17ZwdGBToddI8pDm48kFcjIIX1FKcdO91v_2sr_2x7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USW_WVzW7aVXo2Ry4s1rbuMMhsaMdDaYTr6tab37c5BbKULy2O2411SvyKR8oCtcyw/SpaccaNapoli_Int_13056.jpg?format=500w"/>
-						</div>
-					</div>
-					<div class="col-md-4 offset-md-1 ">
-						<p>
-							John's of Bleecker Street was founded in 1929 by Italian immigrant John Sasso. John's was
-							                        Originally established on Sullivan Street, in the Heart of Greenwich Village. After losing his
-							                        lease on Sullivan Street, John Sasso dismantled his original coal fired brick oven and moved it
-							                        to 278 Bleecker Street where he continued to run and grow his business and refine his pizza
-							                        recipe to perfection. Sasso ran his business until 1954 when he sold the pizzeria to the Vesce
-							                        Brothers. Augustine (Chubby) Vesce bought the business from his brothers and he continued to own
-							                        and operate John's pizzeria until he passed away in 1984, passing his legacy on.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+                   {# CALL THE SLIDER #}
+                    </div>
+        </div>
+        </section>
+    </section>
+		
 	</main>
 
 
