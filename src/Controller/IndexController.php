@@ -17,4 +17,20 @@ class IndexController extends AbstractController
             'controller_name' => 'IndexController',
         ]);
     }
+
+    /**
+     * @Route("/menus", name="menus")
+     */
+    public function menus(): Response
+    {
+        return $this->render('pages/menus.html.twig');
+    }
+
+      /**
+     * @Route("/about", name="about")
+     */
+    public function about(): Response
+    {
+        return $this->render('pages/about.html.twig');
+    }
 }

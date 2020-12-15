@@ -16,9 +16,12 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "@popperjs/core": "^2.6.0",
         "bootstrap": "^4.5.3",
         "gsap": "^3.5.1",
+        "jquery": "^3.5.1",
         "node-sass": "^4.14.1",
+        "popper.js": "^1.16.1",
         "sass-loader": "^9.0.1"
     }
 }
