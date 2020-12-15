@@ -3,63 +3,22 @@
 @import "components/productCard.scss";
 
 
+img {
+    max-width: 100%;
+}
+
 .navbar-brand {
     font-family: 'Quattrocento';
     font-weight: bold;
     color:$primary;
 }
 
-h1 {
-    color:$primary;
-    font-family: $headfont;
-    font-size: 4em;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    display: inline-block;
-    margin: 0.8em auto;
-    position: relative;
-    white-space: nowrap;
-    text-transform: uppercase;
-
-    &:before {
-        content:"";
-        width:13px;
-        height:13px;
-        display: block;
-        background:$accent1;
-        position:absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left:-35px;
-        border-radius: 50%;
-    }
-    &:after{
-        content:"";
-        width:13px;
-        height:13px;
-        display: block;
-        background:$accent1;
-        position:absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right:-35px;
-        border-radius: 50%;
-    } 
-    span {
-        margin-right:-0.1em;
-    }
-
-}
-
-@media (max-width: 768px) { h1 {
-    font-size:2em;
-} } 
-
 
 // BGS
 
 body {
     background:$bglight;
+    overflow-x:hidden;
 }
 
 .sectionbg1 {
@@ -126,3 +85,65 @@ main {
     padding:2em 0;
 }
  
+
+h1 {
+    color:$primary;
+    font-family: $headfont;
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    margin: 0.8em auto;
+    position: relative;
+    white-space: nowrap;
+    text-transform: uppercase;
+    
+
+    &:before {
+        content:"";
+        width:13px;
+        height:13px;
+        display: block;
+        background:$accent1;
+        position:absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left:-35px;
+        border-radius: 50%;
+    }
+    &:after{
+        content:"";
+        width:13px;
+        height:13px;
+        display: block;
+        background:$accent1;
+        position:absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right:-35px;
+        border-radius: 50%;
+    } 
+    span {
+        margin-right:-0.1em;
+    }
+
+}
+
+@media (max-width: 768px) { h1 {
+    font-size:2em;
+} } 
+
+.hideh1 {
+    position: absolute;
+    background:$bglight;
+    width: 128%;
+    top: 0;
+    height: 100%;
+    left: -37px;
+    display: block;
+    z-index: 20;
+}
+ 
+
+
+// About

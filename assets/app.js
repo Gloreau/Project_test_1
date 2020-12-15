@@ -10,5 +10,5 @@ import './styles/app.scss';
 
 // start the Stimulus application
 
-import { gsap } from "gsap";
+
 import './animations';

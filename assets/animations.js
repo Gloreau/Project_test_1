@@ -22,5 +22,15 @@ tlhome.from ('.infos', {
    
 });
 
+// H1
+
+gsap.to('.hideh1', {
+    x:'110%',
+    ease:'expo. out',
+    duration:0.4,
+    delay:1,
+    stagger:0.5
+
+})
 
 
