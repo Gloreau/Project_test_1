@@ -10,7 +10,10 @@ const $ = require('jquery');
 require('bootstrap');
 import './styles/app.scss';
 
-// start the Stimulus application
+// SWUP
+import Swup from 'swup';
+const swup = new Swup(); 
 
 
 import './animations';
+

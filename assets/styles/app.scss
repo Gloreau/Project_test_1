@@ -277,3 +277,13 @@ h1 {
         }
     }
 }
+
+ 
+.transition-fade {
+    transition:1s;
+    opacity:1;
+}
+
+html.is-animating .transition-fade {
+    opacity:0;
+}
