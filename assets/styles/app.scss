@@ -3,6 +3,10 @@
 @import "components/productCard.scss";
 
 
+a:hover  {
+text-decoration: none;
+}
+
 img {
     max-width: 100%;
 }
@@ -11,6 +15,7 @@ img {
     font-family: 'Quattrocento';
     font-weight: bold;
     color:$primary;
+    font-size: 1.4em;
 }
 
 
@@ -217,3 +222,58 @@ h1 {
 
 
 // About
+
+
+// Footer
+
+.footer-ctn {
+    border-top:2px solid $accent1;
+    background:$primary;
+    padding:2em 0;
+    color:white;
+
+    a {
+        color:$secondary;
+
+        &:hover,& i:hover {
+            color:#ff6b6b;
+            transition: all 0.4s ease;
+        }
+    }
+    .footer__about {
+        .brand {
+            font-family: $headfont;
+            color:$accent1;
+            letter-spacing: 0.05rem;
+            font-size:1.9em;
+            font-weight: bold;
+        }
+        .agency {
+            font-size:0.8em;
+        }
+    }
+    .footer__rs {
+        list-style: none;
+
+        i {
+            font-size:2em;
+            color:$secondary;
+        }
+    }
+
+    .footer__phone {
+
+        p {
+            font-weight: bold;
+            letter-spacing: 0.05rem;
+        }
+        a {
+        font-size:1.4em;
+        }
+
+        i {
+            font-size:1.5em;
+            margin-right:10px;
+        }
+    }
+}
